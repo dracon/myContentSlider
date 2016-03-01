@@ -58,6 +58,9 @@ ul.slides {
     bottom: 0;
     z-index: 8;
     transition: transform 1.4s cubic-bezier(0.01, 1, 0.91, 1) 0.5s; }
+    @media all and (max-width: 760px) {
+      ul.slides li {
+        font-size: 20vw; } }
   ul.slides li.active {
     z-index: 10; }
     ul.slides li.active.slide-left {
