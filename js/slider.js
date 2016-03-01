@@ -27,7 +27,7 @@
       var $next = $active.next().length ? $active.next()
           : $(obj).find('li:first');
       $active.addClass('last-active')
-          .animate({opacity: 0.0}, options.duration / 2);
+          .animate({opacity: 0.0}, (options.duration / 4));
       $next.css({opacity: 0.0})
           //.css({"transform": "translateX(-100%)"})
           .addClass('active slide-left')
@@ -45,9 +45,8 @@
       var $next = $active.next().length ? $active.next()
           : $(obj).find('li:first');
       $active.addClass('last-active')
-          .animate({opacity: 0.0}, options.duration / 2);
+          .animate({opacity: 0.0}, options.duration / 4);
       $next.css({opacity: 0.0})
-          //.css({"transform": "translateX(-100%)"})
           .addClass('active slide-right')
           .animate({opacity: 1.0}, 2000, function () {
             console.log('Jeg er her!');
